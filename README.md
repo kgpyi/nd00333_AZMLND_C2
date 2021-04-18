@@ -7,6 +7,7 @@ The dataset used here is same as used in Project 1 which was about bank marketin
 
 Our target column name is "y" in which entries are - 'yes' and 'no'.
 
-We will be usonh Azure ML Studio as well as Python SDK to complete this project. 
+We will be using Azure ML Studio as well as Python SDK to complete this project. 
 
 - - - -
+
