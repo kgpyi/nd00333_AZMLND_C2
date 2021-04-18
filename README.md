@@ -1,1 +1,12 @@
+# Operationalizing Machine Learning #
 
+
+This is second project in the Udacity nanodegree - "Machine Learning Engineer with Microsoft Azure". The aim of this project is to configure a cloud-based machine learning production model, deploy it, and consume it. Along with it - create, publish, and consume a pipeline.
+
+The dataset used here is same as used in Project 1 which was about bank marketing, which had 32950 rows and 21 columns - age,job,marital,education,default,housing,loan,contact,month,day_of_week,duration,campaign,pdays,previous,poutcome,emp.var.rate,cons.price.idx,cons.conf.idx,euribor3m,nr.employed and y.
+
+Our target column name is "y" in which entries are - 'yes' and 'no'.
+
+We will be usonh Azure ML Studio as well as Python SDK to complete this project. 
+
+- - - -
