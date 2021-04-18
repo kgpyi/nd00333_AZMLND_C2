@@ -95,6 +95,7 @@ We run serve.py, to see our requests.
 ![16](https://user-images.githubusercontent.com/34343621/115163818-e7ee7580-a0c8-11eb-94a2-fedc861f56ba.png)
 
 After running the file I got:
+
 ![17](https://user-images.githubusercontent.com/34343621/115163835-00f72680-a0c9-11eb-96e0-4f533dff784c.png)
 
 6. Use Jupyter Notebook to create, publish and consume a pipeline.
