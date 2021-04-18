@@ -11,3 +11,9 @@ We will be using Azure ML Studio as well as Python SDK to complete this project.
 
 - - - -
 
+## Architectural Diagram ##
+
+Mainly the project has 7 steps, 8th one is documenttion which is needed for submission of the project. 
+
+![3](https://user-images.githubusercontent.com/34343621/115155839-40a91880-a09f-11eb-8ba4-7dc7069f2d5a.png)
+
