@@ -52,11 +52,60 @@ Once the model is deployed, use the endpoint.py script provided to interact with
 For this part of the project, one has to use the Jupyter Notebook provided in the starter files, also make sure to update the notebook to have the same keys, URI, dataset, cluster, and model names already created.
 
 ## Key Steps ##
-There needs a dataset present for us to work with, so we need to confirm if dataset is present. Here we can see the dataset. 
+1. There needs a dataset present for us to work with, so we need to confirm if dataset is present. Here we can see the dataset. 
 ![1](https://user-images.githubusercontent.com/34343621/115162401-f33da300-a0c0-11eb-834d-0e758cfa145a.png)
 
 Next thing to do is feed it to AutoML, after fixing the target coloum which in our case was y and Classification is method used by AutoML
 ![2](https://user-images.githubusercontent.com/34343621/115162442-241dd800-a0c1-11eb-92aa-44741be5a607.png)
+
+It takes some mintues to run it complete, once it ran complete it was clear that best algorithm was VotingEnsemble with accuracy of 91.8%.
+![3](https://user-images.githubusercontent.com/34343621/115162573-fe450300-a0c1-11eb-89fa-dcaae3458ca3.png)
+![4](https://user-images.githubusercontent.com/34343621/115162574-01d88a00-a0c2-11eb-820d-6bac4cf24a05.png)
+![5](https://user-images.githubusercontent.com/34343621/115162588-1452c380-a0c2-11eb-9ee6-6716ae1d0c2f.png)
+![6](https://user-images.githubusercontent.com/34343621/115162725-ab1f8000-a0c2-11eb-8291-599f41e17955.png)
+
+
+2. We then deploy the model with ACI and Enable authentication. 
+![7](https://user-images.githubusercontent.com/34343621/115162673-77dcf100-a0c2-11eb-820a-78589ffd45e0.png)
+
+Deployment has started in this screenshot. 
+![8](https://user-images.githubusercontent.com/34343621/115163446-cd1b0180-a0c6-11eb-8a13-f2d681bc858b.png)
+
+3.  Enable Log insights by running log.py file.  
+![8 1](https://user-images.githubusercontent.com/34343621/115163624-c214a100-a0c7-11eb-95e8-92f5432544b5.png)
+
+After running log.py we can see insights
+![9](https://user-images.githubusercontent.com/34343621/115163512-1f5c2280-a0c7-11eb-8cff-c00c14ffd2f1.png)
+![10](https://user-images.githubusercontent.com/34343621/115163680-1ae43980-a0c8-11eb-8b37-5b7d5bf897d6.png)
+![11](https://user-images.githubusercontent.com/34343621/115163683-1ddf2a00-a0c8-11eb-8d93-a6fac602012b.png)
+
+This is dashboard of insights. 
+![9 1](https://user-images.githubusercontent.com/34343621/115163505-12d7ca00-a0c7-11eb-932b-435678941cb2.png)
+
+4. Make documentation of deployed endpoint using swagger: We need swagger.json file which we download and keep it along with other swagger files. Then we execute swaager.sh file to get our swagger dashboard. 
+![12](https://user-images.githubusercontent.com/34343621/115163686-26cffb80-a0c8-11eb-8a17-2f6ac88f2320.png)
+
+ ![13](https://user-images.githubusercontent.com/34343621/115163715-4a934180-a0c8-11eb-918a-a9619352ebd1.png)
+
+We run serve.py, to see our requests. 
+![14](https://user-images.githubusercontent.com/34343621/115163744-6bf42d80-a0c8-11eb-8f67-f20c54888162.png)
+![15](https://user-images.githubusercontent.com/34343621/115163750-71ea0e80-a0c8-11eb-89a6-c01d107c1337.png)
+
+5. Consume the model endpoints - we make changes to endpoints.py file - we provide it with scoring_uri and key
+![16](https://user-images.githubusercontent.com/34343621/115163818-e7ee7580-a0c8-11eb-94a2-fedc861f56ba.png)
+
+After running the file I got:
+![17](https://user-images.githubusercontent.com/34343621/115163835-00f72680-a0c9-11eb-96e0-4f533dff784c.png)
+
+6. Use Jupyter Notebook to create, publish and consume a pipeline.
+Pipeline being created. 
+![18](https://user-images.githubusercontent.com/34343621/115163853-18ceaa80-a0c9-11eb-8c3a-c5efb94b9e7b.png)
+
+![19](https://user-images.githubusercontent.com/34343621/115163874-3439b580-a0c9-11eb-99ff-622df7409170.png)
+
+This shows Run Details Widget
+![20](https://user-images.githubusercontent.com/34343621/115163899-64815400-a0c9-11eb-8e60-b1ca1a7bf4ed.png)
+
 
 
 
