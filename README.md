@@ -50,3 +50,13 @@ Once the model is deployed, use the endpoint.py script provided to interact with
 
 ### 7. Create and publish a pipeline ###
 For this part of the project, one has to use the Jupyter Notebook provided in the starter files, also make sure to update the notebook to have the same keys, URI, dataset, cluster, and model names already created.
+
+## Key Steps ##
+There needs a dataset present for us to work with, so we need to confirm if dataset is present. Here we can see the dataset. 
+![1](https://user-images.githubusercontent.com/34343621/115162401-f33da300-a0c0-11eb-834d-0e758cfa145a.png)
+
+Next thing to do is feed it to AutoML, after fixing the target coloum which in our case was y and Classification is method used by AutoML
+![2](https://user-images.githubusercontent.com/34343621/115162442-241dd800-a0c1-11eb-92aa-44741be5a607.png)
+
+
+
