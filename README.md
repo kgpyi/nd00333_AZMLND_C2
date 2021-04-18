@@ -91,7 +91,7 @@ We run serve.py, to see our requests.
 ![14](https://user-images.githubusercontent.com/34343621/115163744-6bf42d80-a0c8-11eb-8f67-f20c54888162.png)
 ![15](https://user-images.githubusercontent.com/34343621/115163750-71ea0e80-a0c8-11eb-89a6-c01d107c1337.png)
 
-5. Consume the model endpoints - we make changes to endpoints.py file - we provide it with scoring_uri and key
+5. Consume the model endpoints - we make changes to endpoint.py file - we provide it with scoring_uri and key
 ![16](https://user-images.githubusercontent.com/34343621/115163818-e7ee7580-a0c8-11eb-94a2-fedc861f56ba.png)
 
 After running the file I got:
